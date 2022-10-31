@@ -1,0 +1,25 @@
+@use 'var';
+
+//base//
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a, button, input, textarea, select {
+    all: unset;
+}
+ul, li {
+    list-style-type: none;
+}
+body {
+    background-color: var.$bg-color;
+    margin: 0 auto;
+    font-family: var.$main-font;
+    font-weight: var.$weight-regular;
+}
+
+//sections// 
+.header, .main, .footer {
+    max-width: 1900px;
+}

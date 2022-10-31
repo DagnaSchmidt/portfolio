@@ -1,9 +1,30 @@
-//colors// 
+@font-face {
+    font-family: 'Krylon';
+    src: url(font/Krylon-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
-//fonts// 
+//colors//
+$main-color: rgba(8, 42, 58, 1);
+$main-color-8: rgba(8, 42, 58, .8);
+$main-color-6: rgba(8, 42, 58, .6);
+$main-color-2: rgba(8, 42, 58, .2);
+$secondary-color: rgba(8, 51, 70, 1);
+$secondary-color-8: rgba(8, 51, 70, .8);
+$secondary-color-6: rgba(8, 51, 70, .6);
+$secondary-color-2: rgba(8, 51, 70, .2);
+$bg-color: rgba(242, 229, 215, 1);
+
+//fonts//
+$main-font: 'Krylon', sans-serif; 
 
 //font-sizes//
+$size-small: 12px;
+$size-regular: 16px;
+$size-large: 36px;
 
 //font-weights//
+$weight-regular: 400;
 
-//box shadows// 

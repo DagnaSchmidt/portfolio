@@ -1,1 +1,7 @@
-/*# sourceMappingURL=media.css.map */
+@font-face {
+  font-family: "Krylon";
+  src: url(font/Krylon-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}/*# sourceMappingURL=media.css.map */

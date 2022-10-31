@@ -4,9 +4,273 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--LINKS TO STYLES-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css"> 
+<!--FONTS-->
+
+<!--TITLE-->
     <title>Dagna Schmidt - web developer</title>
 </head>
 <body>
+
+    <header class="header">
+        <img src="img/dagna.svg" alt="dagna schmidt title" class="header__img">
+        <button class="header__btn menu-btn">
+            <img src="img/menu-icon.svg" alt="menu icon" class="header__btn__icon">
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">about me</li>
+                <li class="nav__item">skills</li>
+                <li class="nav__item">education</li>
+                <li class="nav__item">work</li>
+                <li class="nav__item">portfolio</li>
+                <li class="nav__item">contact me</li>
+            </ul>
+            <button class="nav__btn close-btn">
+                <img src="img/close-icon.svg" alt="close icon" class="nav__btn__icon">
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!--ABOUT-->
+        <section class="about">
+            <img src="img/about.svg" alt="about me text" class="about__img title__img">
+            <div class="about__content">
+                <div class="about__content__text">
+                    <p class="text">
+                        Junior Web Developer located in Göteborg, Sweden.
+                    </p>
+                    <p class="text">
+                        Experienced in Interior Design, Jewelry Design and as a Dental Technician.
+                    </p>
+                </div>
+                <div class="about__content__text">
+                    <p class="text">
+                        With passion for Analog Photography.
+                    </p>
+                    <p class="text">
+                        Professional athlete, multimedalist of Polish Championships, former member 
+                        of Polish Powerlifting National Team.
+                    </p>
+                </div>
+                <div class="about__content__btns">
+                    <button class="btn__secondary">
+                        download CV
+                    </button>
+                    <button class="btn__primary">
+                        read more
+                    </button>
+                </div>
+            </div>
+            <div class="about__more">
+                <img src="img/hej.svg" alt="hej! text" class="about__more__img title__img">
+                <p class="text">
+                    My name is Dagna Schmidt, 32 years old woman with big passion for every kind of art and design.
+                </p>
+                <p class="text">
+                    I grew up in small village in Poland, spending my free time learning to play saxophone, drawing and painting. 
+                    After graduating high school, through 11 years living in Warsaw, I had gained my education and work experience.
+                </p>
+                <p class="text">
+                    I am a really meticulous person, with good eye for details and head always full of new ideas.
+                </p>
+                <p class="text">
+                    My experience as a professional athlete learned me to perform my best on stressful situations. 
+                    I am also used to have hard to achieve, long-term goals.
+                </p>
+                <p class="text">
+                    In love with never ending process of self developing.
+                </p>
+            </div>
+        </section>
+
+        <!--SKILLS-->
+        <section class="skills">
+            <img src="img/skills.svg" alt="my skills text" class="skills__img title__img">
+            <div class="skills__content">
+                <div class="skills__content__bars">
+                    <div class="skill-progression">
+                        <h3 class="title__main">HTML</h3>
+                        <div class="skills-progression__bar">
+                            <div class="bar__80"></div>
+                            <h4 class="title__secondary">80%</h4>
+                        </div>
+                    </div>
+                    <div class="skill-progression">
+                        <h3 class="title__main">CSS</h3>
+                        <div class="skills-progression__bar">
+                            <div class="bar__80"></div>
+                            <h4 class="title__secondary">80%</h4>
+                        </div>
+                    </div>
+                    <div class="skill-progression">
+                        <h3 class="title__main">SASS</h3>
+                        <div class="skills-progression__bar">
+                            <div class="bar__90"></div>
+                            <h4 class="title__secondary">90%</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content__bars">
+                    <div class="skill-progression">
+                        <h3 class="title__main">JavaScript</h3>
+                        <div class="skills-progression__bar">
+                            <div class="bar__30"></div>
+                            <h4 class="title__secondary">30%</h4>
+                        </div>
+                    </div>
+                    <div class="skill-progression">
+                        <h3 class="title__main">Git</h3>
+                        <div class="skills-progression__bar">
+                            <div class="bar__50"></div>
+                            <h4 class="title__secondary">50%</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content__bars">
+                    <div class="skill-progression">
+                        <h3 class="title__main">Figma</h3>
+                        <div class="skills-progression__bar">
+                            <div class="bar__80"></div>
+                            <h4 class="title__secondary">80%</h4>
+                        </div>
+                    </div>
+                    <div class="skill-progression">
+                        <h3 class="title__main">UI design</h3>
+                        <div class="skills-progression__bar">
+                            <div class="bar__60"></div>
+                            <h4 class="title__secondary">60%</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--EDUCATION-->
+        <section class="education">
+            <img src="img/education.svg" alt="education text" class="education__img title__img">
+            <div class="education__content">
+                <div class="education__item">
+                    <div class="education__item__title">
+                        <h3 class="title__main">
+                            Web Developer
+                        </h3>
+                        <h3 class="title__main">2022 - 2023</h3>
+                    </div>
+                    <h4 class="title__secondary">
+                        Sundsgårdens folkhögskola, Helsingborg
+                    </h4>
+                    <div class="education__item__divider"></div>
+                </div>
+            </div>
+            <div class="education__content">
+                <div class="education__item">
+                    <div class="education__item__title">
+                        <h3 class="title__main">
+                            Interior Designer
+                        </h3>
+                        <h3 class="title__main">2010 - 2015</h3>
+                    </div>
+                    <h4 class="title__secondary">
+                        Academy of Fine Arts, Warsaw
+                    </h4>
+                    <div class="education__item__divider"></div>
+                </div>
+                <div class="education__item">
+                    <div class="education__item__title">
+                        <h3 class="title__main">
+                            Dental Technician
+                        </h3>
+                        <h3 class="title__main">2019 - 2021</h3>
+                    </div>
+                    <h4 class="title__secondary">
+                        Medical School, Warsaw
+                    </h4>
+                    <div class="education__item__divider"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--WORK-->
+        <section class="work">
+            <img src="img/work.svg" alt="work text" class="work__img title__img">
+            <div class="work__content">
+                <div class="work__item">
+                    <h3 class="title__main">
+                        Dental Technician
+                    </h3>
+                    <div class="work__item__title">
+                        <p class="text">
+                            K.Thorup Dentallab, Göteborg
+                        </p>
+                        <h4 class="title__secondary">
+                            2021-2022
+                        </h4>
+                    </div>
+                    <div class="work__item__title">
+                        <p class="text">
+                            Owner: SCHMIDT Dent, Warsaw
+                        </p>
+                        <h4 class="title__secondary">
+                            2019-2021
+                        </h4>
+                    </div>
+                    <div class="work__item__title">
+                        <p class="text">
+                            Scan-Lab, Warsaw
+                        </p>
+                        <h4 class="title__secondary">
+                            2018-2019
+                        </h4>
+                    </div>
+                    <div class="work__item__divider"></div>
+                </div>
+                <div class="work__item">
+                    <h3 class="title__main">
+                        Jewelry assistant
+                    </h3>
+                    <div class="work__item__title">
+                        <p class="text">
+                            Frou-Frou, Warsaw
+                        </p>
+                        <h4 class="title__secondary">
+                            2013-2018
+                        </h4>
+                    </div>
+                    <div class="work__item__title">
+                        <p class="text">
+                            Lilou, Warsaw
+                        </p>
+                        <h4 class="title__secondary">
+                            2015-2016
+                        </h4>
+                    </div>
+                    <div class="work__item__title">
+                        <p class="text">
+                            Stanimex, Warsaw
+                        </p>
+                        <h4 class="title__secondary">
+                            2011-2013
+                        </h4>
+                    </div>
+                    <div class="work__item__divider"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--PORTFOLIO-->
+        <section class="portfolio">
+            <img src="img/portfolio.svg" alt="portfolio text" class="portfolio__img title__img">
+        </section>
+        <section class="contact"></section>
+    </main>
+    <footer class="footer">
+
+    </footer>
     
 </body>
 </html>
