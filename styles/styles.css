@@ -172,7 +172,7 @@ body {
 .about, .skills, .education, .work, .portfolio, .contact {
   padding: 5vh 2vw 10vh 2vw;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -209,4 +209,33 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3vh;
+}
+.main .education__content {
+  display: flex;
+  justify-content: space-between;
+}
+.main .education__content__item {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.main .education__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.main .education__item__title {
+  display: flex;
+  justify-content: space-between;
+}
+.main .education__item__subtitle {
+  text-align: center;
+}
+.main .education__item__divider {
+  align-self: center;
+  width: 80%;
+  height: 4px;
+  background-color: rgb(8, 42, 58);
+  margin-bottom: 3vh;
 }/*# sourceMappingURL=styles.css.map */
