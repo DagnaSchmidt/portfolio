@@ -5,6 +5,11 @@
   font-style: normal;
   font-display: swap;
 }
+.bar__90, .bar__80, .bar__60, .bar__50, .bar__30 {
+  height: 12px;
+  background-color: rgb(8, 42, 58);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -29,6 +34,8 @@ body {
 .title__img {
   height: 20vh;
   width: auto;
+  align-self: flex-start;
+  margin-left: 5vw;
 }
 .title__main {
   font-size: 16px;
@@ -45,6 +52,58 @@ body {
   font-size: 16px;
   color: rgba(8, 42, 58, 0.8);
   line-height: 20px;
+}
+
+.btn__primary {
+  padding: 8px 16px;
+  border-radius: 24px;
+  border: 0.5px solid rgb(8, 42, 58);
+  color: rgb(8, 42, 58);
+}
+.btn__primary:hover {
+  cursor: pointer;
+  background-color: rgba(8, 51, 70, 0.2);
+}
+.btn__secondary {
+  padding: 8px 16px;
+  text-decoration: underline;
+  color: rgb(8, 42, 58);
+}
+.btn__secondary:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+.skill-progression {
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+}
+.skill-progression__bar {
+  width: 13vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar__30 {
+  width: 3vw;
+}
+
+.bar__50 {
+  width: 5vw;
+}
+
+.bar__60 {
+  width: 6vw;
+}
+
+.bar__80 {
+  width: 8vw;
+}
+
+.bar__90 {
+  width: 9vw;
 }
 
 .header, .main, .footer {
@@ -111,9 +170,12 @@ body {
 }
 
 .about, .skills, .education, .work, .portfolio, .contact {
-  padding: 5vh 2vw;
+  padding: 5vh 2vw 10vh 2vw;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main {
@@ -121,4 +183,30 @@ body {
 }
 .main .about__more {
   display: none;
+}
+.main .about__content {
+  display: flex;
+  justify-content: space-between;
+}
+.main .about__content__text {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.main .about__content__btns {
+  width: 20vw;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+.main .skills__content {
+  display: flex;
+  justify-content: space-between;
+}
+.main .skills__content__bars {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
 }/*# sourceMappingURL=styles.css.map */
