@@ -7,8 +7,9 @@
 <!--LINKS TO STYLES-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css"> 
-<!--FONTS-->
-
+<!--FONT AWESOME ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/90116f7b33.js" crossorigin="anonymous"></script>
 <!--TITLE-->
     <title>Dagna Schmidt - web developer</title>
 </head>
@@ -265,11 +266,46 @@
         <!--PORTFOLIO-->
         <section class="portfolio">
             <img src="img/portfolio.svg" alt="portfolio text" class="portfolio__img title__img">
+            <div class="portfolio__item"></div>
         </section>
-        <section class="contact"></section>
-    </main>
-    <footer class="footer">
 
+        <!--CONTACT-->
+        <section class="contact">
+            <img src="img/contact.svg" alt="contact me text" class="contact__img title__img">
+            <form action="" class="contact__form">
+                <label for="email" class="label">Your Email</label>
+                <input type="email" id="email" class="ipnut">
+                <label for="message">Your Message</label>
+                <input type="text" id="message" class="input">
+                <button class="btn__primary">
+                    send
+                </button>
+            </form>
+            <div class="contact__icons">
+                <a href="https://www.instagram.com/b.ardzo/" target="_blank" class="contact__link">
+                    <i class="fa-brands fa-instagram contact__icon"></i>
+                </a>
+                <a href="https://github.com/DagnaSchmidt/" target="_blank" class="contact__link">
+                    <i class="fa-brands fa-github contact__icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dagna-schmidt-90ba37207/" target="_blank" class="contact__link">
+                    <i class="fa-brands fa-linkedin contact__icon"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__content">
+            <img src="img/t.svg" alt="T letter" class="footer__img">
+            <p class="text">
+                his portfolio was created entirely by me 
+                with mobile first approach, 
+                starting from sketch in Figma 
+                and writing in VSCode.
+            </p>
+        </div>
     </footer>
     
 </body>
