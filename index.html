@@ -17,31 +17,31 @@
 
     <header class="header">
         <img src="img/dagna.svg" alt="dagna schmidt title" class="header__img">
-        <button class="header__btn menu-btn">
+        <button class="header__btn menu-btn" id="nav-btn">
             <img src="img/menu-icon.svg" alt="menu icon" class="header__btn__icon">
         </button>
-        <nav class="nav">
+        <nav class="nav" id="nav">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="">about me</a>
+                    <a href="#about">about me</a>
                 </li>
                 <li class="nav__item">
-                    <a href="">my skills</a>
+                    <a href="#skills">my skills</a>
                 </li>
                 <li class="nav__item">
-                    <a href="">education</a>
+                    <a href="#education">education</a>
                 </li>
                 <li class="nav__item">
-                    <a href="">work</a>
+                    <a href="#work">work</a>
                 </li>
                 <li class="nav__item">
-                    <a href="">portfolio</a>
+                    <a href="#portfolio">portfolio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="">contact me</a>
+                    <a href="#contact">contact me</a>
                 </li>
             </ul>
-            <button class="nav__btn close-btn">
+            <button class="nav__btn close-btn" id="nav-close">
                 <img src="img/close-icon.svg" alt="close icon" class="nav__btn__icon">
             </button>
         </nav>
@@ -50,7 +50,7 @@
     <main class="main">
 
         <!--ABOUT-->
-        <section class="about">
+        <section class="about" id="about">
             <img src="img/about.svg" alt="about me text" class="about__img title__img">
             <div class="about__content">
                 <div class="about__content__text">
@@ -74,13 +74,12 @@
                     <button class="btn__secondary">
                         download CV
                     </button>
-                    <button class="btn__primary">
+                    <button class="btn__primary" id="more-btn">
                         read more
                     </button>
                 </div>
             </div>
-            <div class="about__more">
-                <img src="img/hej.svg" alt="hej! text" class="about__more__img title__img">
+            <div class="about__more" id="more-menu">
                 <p class="text">
                     My name is Dagna Schmidt, 32 years old woman with big passion for every kind of art and design.
                 </p>
@@ -98,11 +97,14 @@
                 <p class="text">
                     In love with never ending process of self developing.
                 </p>
+                <button class="nav__btn close-btn" id="more-close">
+                    <img src="img/close-icon.svg" alt="close icon" class="nav__btn__icon">
+                </button>
             </div>
         </section>
 
         <!--SKILLS-->
-        <section class="skills">
+        <section class="skills" id="skills">
             <img src="img/skills.svg" alt="my skills text" class="skills__img title__img">
             <div class="skills__content">
                 <div class="skills__content__bars">
@@ -164,7 +166,7 @@
         </section>
 
         <!--EDUCATION-->
-        <section class="education">
+        <section class="education" id="education">
             <img src="img/education.svg" alt="education text" class="education__img title__img">
             <div class="education__content">
                 <div class="education__content__item">
@@ -211,7 +213,7 @@
         </section>
 
         <!--WORK-->
-        <section class="work">
+        <section class="work" id="work">
             <img src="img/work.svg" alt="work text" class="work__img title__img">
             <div class="work__content">
                 <div class="work__item">
@@ -278,33 +280,35 @@
         </section>
 
         <!--PORTFOLIO-->
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <img src="img/portfolio.svg" alt="portfolio text" class="portfolio__img title__img">
             <div class="portfolio__item"></div>
         </section>
 
         <!--CONTACT-->
-        <section class="contact">
+        <section class="contact" id="contact">
             <img src="img/contact.svg" alt="contact me text" class="contact__img title__img">
-            <form action="" class="contact__form">
-                <label for="email" class="label">Your Email</label>
-                <input type="email" id="email" class="ipnut">
-                <label for="message">Your Message</label>
-                <input type="text" id="message" class="input">
-                <button class="btn__primary">
-                    send message
-                </button>
-            </form>
-            <div class="contact__icons">
-                <a href="https://www.instagram.com/b.ardzo" target="_blank" rel="noopener" class="contact__link">
-                    <i class="fa-brands fa-instagram contact__icon"></i>
-                </a>
-                <a href="https://github.com/DagnaSchmidt" target="_blank" rel="noopener" class="contact__link">
-                    <i class="fa-brands fa-github contact__icon"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/dagna-schmidt-90ba37207" rel="noopener" target="_blank" class="contact__link">
-                    <i class="fa-brands fa-linkedin contact__icon"></i>
-                </a>
+            <div class="contact__content">
+                <form action="" class="contact__form">
+                    <label for="email" class="label">Your Email</label>
+                    <input type="email" id="email" class="input" placeholder="your email here">
+                    <label for="message">Your Message</label>
+                    <input type="text" id="message" class="input" placeholder="write your message here">
+                    <button class="btn__primary contact__btn">
+                        send message
+                    </button>
+                </form>
+                <div class="contact__icons">
+                    <a href="https://www.instagram.com/b.ardzo" target="_blank" rel="noopener" class="contact__link">
+                        <i class="fa-brands fa-instagram contact__icon"></i>
+                    </a>
+                    <a href="https://github.com/DagnaSchmidt" target="_blank" rel="noopener" class="contact__link">
+                        <i class="fa-brands fa-github contact__icon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dagna-schmidt-90ba37207" rel="noopener" target="_blank" class="contact__link">
+                        <i class="fa-brands fa-linkedin contact__icon"></i>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -312,15 +316,22 @@
     <!--FOOTER-->
     <footer class="footer">
         <div class="footer__content">
-            <img src="img/t.svg" alt="T letter" class="footer__img">
-            <p class="text">
-                his portfolio was created entirely by me 
-                with mobile first approach, 
-                starting from sketch in Figma 
-                and writing in VSCode.
-            </p>
+            <div class="footer__item">
+                <img src="img/t.svg" alt="T letter" class="footer__img">
+                <p class="footer__text text">
+                    his portfolio was created entirely by me
+                </p>
+            </div>
+            <div class="footer__item__second">
+                <p class="footer__text text">
+                    with mobile first approach, 
+                    starting from sketch in Figma 
+                    and writing in VSCode.
+                </p>
+            </div>
         </div>
     </footer>
     
+    <script src="js/main.js"></script>
 </body>
 </html>

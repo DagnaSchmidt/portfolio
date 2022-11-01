@@ -24,12 +24,16 @@ body {
 }
 
 //reusables// 
+.show {
+    right: 0 !important;
+}
 .title {
     &__img {
         height: 20vh;
         width: auto;
         align-self: flex-start;
         margin-left: 5vw;
+        margin-top: 5vh;
     }
     &__main {
         font-size: var.$size-regular;
@@ -131,17 +135,18 @@ body {
 //nav//
 .nav {
     position: fixed;
-    right: 0;
+    right: -100%;
     top: 0;
     height: 100vh;
     width: 40vw;
     z-index: 3;
     border-left: 15px solid var.$secondary-color-8;
     background-color: var.$bg-color;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    display: none; //!!!!!!!!!!!!!!!!!!!!!!//
+    display: flex;
+    padding: 0 5vw;
+    transition: .4;
     &__list {
         display: flex;
         flex-direction: column;
@@ -156,9 +161,8 @@ body {
         }
     }
     &__btn {
-        position: fixed;
-        right: 5vw;
-        top: 90vh;
+        align-self: flex-end;
+        margin-bottom: 6vh;
         color: var.$main-color-8;
         &:hover {
             cursor: pointer;
@@ -166,9 +170,23 @@ body {
         }
     }
 }
+.input {
+    background-color: var.$secondary-color-2;
+    border-radius: 24px;
+    height: 32px;
+    margin: 2vh 0 6vh 0;
+    padding: 2px 8px;
+    &:hover {
+        border: .5px solid var.$main-color;
+    }
+    &:focus, &:active {
+        border: 2px solid var.$main-color;
+    }
+}
 
 .about, .skills, .education, .work, .portfolio, .contact {
     padding: 5vh 2vw 10vh 2vw;
+    margin: 2vh 0;
     width: 100%;
     height: 80vh;
     display: flex;
@@ -179,7 +197,21 @@ body {
     padding: 0 4.5vw;
     .about {  
         &__more {
-            display: none; //!!!!!!!!!!!!!!!!!!!!!!//
+            position: fixed;
+            right: -100%;
+            top: 0;
+            height: 100vh;
+            width: 40vw;
+            z-index: 3;
+            border-left: 15px solid var.$secondary-color-8;
+            background-color: var.$bg-color;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 10vh 5vw 0 5vw;
+            transition: .4;
+            //display: none; //!!!!!!!!!!!!!!!!!!!!!!//
         }
         &__content {
             display: flex;
@@ -239,6 +271,73 @@ body {
                 background-color: var.$main-color;
                 margin-bottom: 3vh;
             }
+        }
+    }
+    .work {
+        &__content {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item {
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            gap: 3vh;
+            &__title {
+                display: flex;
+                justify-content: space-between;
+                width: 20vw;
+                align-self: flex-end;
+            }
+        }
+    }
+    .contact {
+        &__content {
+            display: flex;
+            justify-content: flex-end;
+            gap: 5vw;
+        }
+        &__form, &__icons {
+            width: 20vw;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+        }
+        &__btn {
+            align-self: flex-end;
+        }
+        &__icons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+        }
+        &__link {
+            color: var.$secondary-color-6;
+            &:hover {
+                cursor: pointer;
+                color: var.$secondary-color;
+            }
+        }
+        &__icon {
+            font-size: var.$size-large;
+        }
+    }
+}
+.footer {
+    padding: 6vh 4.5vw 6vh 6vw;
+    background-color: var.$main-color;
+    &__content {
+        width: 25vw;
+    }
+    &__text {
+        color: var.$bg-color;
+    }
+    &__item {
+        display: flex;
+        align-items: baseline;
+        &__second {
+            padding-left: 3vw;
         }
     }
 }
