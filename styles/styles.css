@@ -208,7 +208,7 @@ html {
   padding: 5vh 2vw 10vh 2vw;
   margin: 2vh 0;
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -304,13 +304,56 @@ html {
   width: 20vw;
   align-self: flex-end;
 }
-.main .contact__content {
-  display: flex;
-  justify-content: flex-end;
+.main .portfolio__content {
+  margin-top: 15vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 5vw;
 }
+.main .portfolio__item {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.main .portfolio__img {
+  height: 25vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(0.6);
+}
+.main .portfolio__img:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+}
+.main .portfolio__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1vw;
+}
+.main .portfolio__icons__chevron {
+  padding: 10px;
+}
+.main .portfolio__icons__chevron:hover {
+  cursor: pointer;
+}
+.main .portfolio__divider {
+  height: 1px;
+  background-color: rgb(8, 42, 58);
+}
+.main .portfolio__description {
+  display: none;
+  padding: 0 1vw;
+}
+.main .contact__content {
+  margin-top: 15vh;
+  display: flex;
+  justify-content: space-between;
+}
 .main .contact__form, .main .contact__icons {
-  width: 20vw;
+  width: 30vw;
 }
 .main .contact__form {
   display: flex;
@@ -351,4 +394,8 @@ html {
 }
 .footer__item__second {
   padding-left: 3vw;
+}
+
+.open .portfolio__icons {
+  transform: rotate(-180deg);
 }/*# sourceMappingURL=styles.css.map */
