@@ -288,6 +288,9 @@ html {
   background-color: rgb(8, 42, 58);
   margin-bottom: 3vh;
 }
+.main .education .title__secondary {
+  min-width: 70px;
+}
 .main .work__content {
   display: flex;
   justify-content: space-between;
@@ -303,6 +306,10 @@ html {
   justify-content: space-between;
   width: 20vw;
   align-self: flex-end;
+}
+.main .work .title__secondary {
+  min-width: 70px;
+  text-align: end;
 }
 .main .portfolio__content {
   margin-top: 15vh;

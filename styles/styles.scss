@@ -288,6 +288,9 @@ html {
                 margin-bottom: 3vh;
             }
         }
+        .title__secondary {
+            min-width: 70px;
+        }
     }
     .work {
         &__content {
@@ -305,6 +308,10 @@ html {
                 width: 20vw;
                 align-self: flex-end;
             }
+        }
+        .title__secondary {
+            min-width: 70px;
+            text-align: end;
         }
     }
     .portfolio {
