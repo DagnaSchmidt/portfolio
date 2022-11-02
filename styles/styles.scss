@@ -134,6 +134,7 @@ html {
         width: auto;
         padding: 10px;
         border-radius: 24px;
+        z-index: 2;
         &:hover {
             cursor: pointer;
             background-color: var.$secondary-color-2;
@@ -207,7 +208,7 @@ html {
     min-height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 8vh;
 }
 .main {
     padding: 0 4.5vw;
@@ -227,7 +228,6 @@ html {
             flex-direction: column;
             padding: 10vh 5vw 0 5vw;
             transition: .4;
-            //display: none; //!!!!!!!!!!!!!!!!!!!!!!//
         }
         &__content {
             display: flex;
@@ -305,7 +305,7 @@ html {
             &__title {
                 display: flex;
                 justify-content: space-between;
-                width: 20vw;
+                width: 30vw;
                 align-self: flex-end;
             }
         }
@@ -362,7 +362,6 @@ html {
     }
     .contact {
         &__content {
-            margin-top: 15vh;
             display: flex;
             justify-content: space-between;
         }
@@ -397,7 +396,7 @@ html {
     padding: 6vh 4.5vw 6vh 6vw;
     background-color: var.$main-color;
     &__content {
-        width: 25vw;
+        width: 33vw;
     }
     &__text {
         color: var.$bg-color;

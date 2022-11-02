@@ -1,5 +1,206 @@
 @use 'var';
 
 @media screen and (max-width: 1100px){
+    .main {
+        .about {
+            &__content {
+                flex-direction: column;
+                &__text, &__btns {
+                    width: 40vw;
+                }
+                
+            }
+        }
+        .skills {
+            &__content {
+                flex-wrap: wrap;
+                gap: 6vh;
+                &__bars {
+                    width: 40vw;
+                    gap: 6vh;
+                }
+            }
+        }
+    }
+    .skill-progression {
+        width: 30vw;
+        &__bar {
+            width: 18vw;
+        }
+    }
+    .bar__30 {
+        width: 5vw;
+    }
+    .bar__50 {
+        width: 7vw;
+    }
+    .bar__60 {
+        width: 8vw;
+    }
+    .bar__80 {
+        width: 10vw;
+    }
+    .bar__90 {
+        width: 11vw;
+    }
+}
 
+@media screen and (max-width: 900px){
+    .main {
+        .portfolio {
+            &__content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            &__img {
+                height: 35vh;
+            }
+        }
+        .about {
+            &__more {
+                width: 60vw;
+            }
+        }
+    }
+    .nav {
+        width: 60vw;
+        &__list {
+            gap: 4vh;
+        }
+    }
+    .footer {
+        &__content {
+            width: 35vw;
+        }
+    }
+}
+
+@media screen and (max-width: 660px){
+    .main {
+        .about {
+            &__content {
+                flex-direction: column;
+                gap: 2vh;
+                &__text {
+                    width: 70%;
+                }
+                &__btns {
+                    margin-top: 8vh;
+                    width: 100%;
+                }
+            }
+        }
+        .skills {
+            &__content {
+                flex-direction: column;
+                gap: 6vh;
+                &__bars {
+                    align-items: center;
+                    width: 100%;
+                    gap: 6vh;
+                }
+            }
+        }
+        .education {
+            &__content {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                &__item {
+                    width: 100%;
+                }
+            }
+            &__item {
+                &__title, &__subtitle {
+                    width: 100%;
+                }
+            }
+        }
+        .work {
+            &__content {
+                flex-direction: column;
+                width: 100%;
+            }
+            &__item {
+                width: 100%;
+                &__title {
+                    width: 100%;
+                }
+            }
+        }
+        .portfolio {
+            &__content {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            &__img {
+                height: 45vh;
+            }
+        }
+        .contact {
+            &__content {
+                flex-direction: column;
+                align-items: center;
+            }
+            &__form, &__icons {
+                width: 70vw;
+            }
+            &__icons {
+                margin-top: 12vh;
+            }
+        }
+    }
+    .skill-progression {
+        width: 70vw;
+        &__bar {
+            width: 50vw;
+        }
+    }
+    .bar__30 {
+        width: 13vw;
+    }
+    .bar__50 {
+        width: 23vw;
+    }
+    .bar__60 {
+        width: 28vw;
+    }
+    .bar__80 {
+        width: 38vw;
+    }
+    .bar__90 {
+        width: 43vw;
+    }
+    .title {
+        &__img {
+            align-self: center;
+        }
+    }
+    .footer {
+        &__content {
+            width: 70vw;
+        }
+    }
+}
+
+@media screen and (max-width: 440px){
+    .nav {
+        width: 100vw;
+        &__list {
+            gap: 4vh;
+        }
+    }
+    .main {
+        .about {
+            &__more {
+                width: 100vw;
+            }
+            &__text {
+                width: 100%;
+            }
+        }
+    }
+    .header {
+        &__img {
+            width: 103vw;
+        }
+    }
 }

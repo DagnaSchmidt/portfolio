@@ -140,6 +140,7 @@ html {
   width: auto;
   padding: 10px;
   border-radius: 24px;
+  z-index: 2;
 }
 .header__btn:hover {
   cursor: pointer;
@@ -211,7 +212,7 @@ html {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 8vh;
 }
 
 .main {
@@ -304,7 +305,7 @@ html {
 .main .work__item__title {
   display: flex;
   justify-content: space-between;
-  width: 20vw;
+  width: 30vw;
   align-self: flex-end;
 }
 .main .work .title__secondary {
@@ -355,7 +356,6 @@ html {
   padding: 0 1vw;
 }
 .main .contact__content {
-  margin-top: 15vh;
   display: flex;
   justify-content: space-between;
 }
@@ -390,7 +390,7 @@ html {
   background-color: rgb(8, 42, 58);
 }
 .footer__content {
-  width: 25vw;
+  width: 33vw;
 }
 .footer__text {
   color: rgb(242, 229, 215);

@@ -4,4 +4,164 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+@media screen and (max-width: 1100px) {
+  .main .about__content {
+    flex-direction: column;
+  }
+  .main .about__content__text, .main .about__content__btns {
+    width: 40vw;
+  }
+  .main .skills__content {
+    flex-wrap: wrap;
+    gap: 6vh;
+  }
+  .main .skills__content__bars {
+    width: 40vw;
+    gap: 6vh;
+  }
+  .skill-progression {
+    width: 30vw;
+  }
+  .skill-progression__bar {
+    width: 18vw;
+  }
+  .bar__30 {
+    width: 5vw;
+  }
+  .bar__50 {
+    width: 7vw;
+  }
+  .bar__60 {
+    width: 8vw;
+  }
+  .bar__80 {
+    width: 10vw;
+  }
+  .bar__90 {
+    width: 11vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main .portfolio__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main .portfolio__img {
+    height: 35vh;
+  }
+  .main .about__more {
+    width: 60vw;
+  }
+  .nav {
+    width: 60vw;
+  }
+  .nav__list {
+    gap: 4vh;
+  }
+  .footer__content {
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 660px) {
+  .main .about__content {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .main .about__content__text {
+    width: 70%;
+  }
+  .main .about__content__btns {
+    margin-top: 8vh;
+    width: 100%;
+  }
+  .main .skills__content {
+    flex-direction: column;
+    gap: 6vh;
+  }
+  .main .skills__content__bars {
+    align-items: center;
+    width: 100%;
+    gap: 6vh;
+  }
+  .main .education__content {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .main .education__content__item {
+    width: 100%;
+  }
+  .main .education__item__title, .main .education__item__subtitle {
+    width: 100%;
+  }
+  .main .work__content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .work__item {
+    width: 100%;
+  }
+  .main .work__item__title {
+    width: 100%;
+  }
+  .main .portfolio__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main .portfolio__img {
+    height: 45vh;
+  }
+  .main .contact__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .contact__form, .main .contact__icons {
+    width: 70vw;
+  }
+  .main .contact__icons {
+    margin-top: 12vh;
+  }
+  .skill-progression {
+    width: 70vw;
+  }
+  .skill-progression__bar {
+    width: 50vw;
+  }
+  .bar__30 {
+    width: 13vw;
+  }
+  .bar__50 {
+    width: 23vw;
+  }
+  .bar__60 {
+    width: 28vw;
+  }
+  .bar__80 {
+    width: 38vw;
+  }
+  .bar__90 {
+    width: 43vw;
+  }
+  .title__img {
+    align-self: center;
+  }
+  .footer__content {
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 440px) {
+  .nav {
+    width: 100vw;
+  }
+  .nav__list {
+    gap: 4vh;
+  }
+  .main .about__more {
+    width: 100vw;
+  }
+  .main .about__text {
+    width: 100%;
+  }
+  .header__img {
+    width: 103vw;
+  }
 }/*# sourceMappingURL=media.css.map */
