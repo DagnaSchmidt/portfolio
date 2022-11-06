@@ -1,5 +1,13 @@
 @use 'var';
 
+@font-face {
+    font-family: 'Krylon';
+    src: url(../font/Krylon-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 %bar {
     height: 12px;
     background-color: var.$main-color;
@@ -24,6 +32,7 @@ body {
 }
 html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 }
 
 //reusables// 
@@ -128,7 +137,7 @@ html {
     &__btn {
         position: fixed;
         right: 4.5vw;
-        top: 90vh;
+        bottom: 90vh;
         background-color: var.$bg-color;
         height: 24px;
         width: auto;
@@ -171,13 +180,13 @@ html {
         }
     }
     &__btn {
-        align-self: flex-end;
+        align-self: flex-start;
         background-color: var.$bg-color;
         height: 24px;
         width: auto;
         padding: 10px;
         border-radius: 24px;
-        margin-bottom: 4.5vh;
+        margin-top: 4.5vh;
         color: var.$main-color-8;
         &:hover {
             cursor: pointer;
@@ -219,15 +228,23 @@ html {
             top: 0;
             height: 100vh;
             width: 40vw;
-            z-index: 3;
+            z-index: 4;
             border-left: 15px solid var.$secondary-color-8;
             background-color: var.$bg-color;
-            justify-content: space-between;
-            align-items: center;
             display: flex;
             flex-direction: column;
-            padding: 10vh 5vw 0 5vw;
+            gap: 3vh;
+            padding: 1vw 5vw 8vh 5vw;
             transition: .4;
+            .close-btn {
+                align-self: flex-end;
+            }
+            &__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+            }
         }
         &__content {
             display: flex;
@@ -326,6 +343,23 @@ html {
             flex-direction: column;
             gap: 2vh;
         }
+        &__link {
+            position: relative;
+            &:hover {
+                .portfolio__demo {
+                    display: block;
+                }
+            }
+        }
+        &__demo {
+            position: absolute;
+            top: 1vh;
+            left: 1vh;
+            padding: .5vw;
+            background-color: var.$bg-color;
+            z-index: 3;
+            display: none;
+        }
         &__img {
             height: 25vh;
             width: 100%;
@@ -343,7 +377,15 @@ html {
             align-items: center;
             padding: 0 1vw;
         }
+        &__less {
+            display: none;
+        }
         &__icons {
+            .text {
+                font-size: var.$size-small;
+            }
+            display: flex;
+            align-items: center;
             &__chevron {
                 padding: 10px;
                 &:hover {
@@ -411,7 +453,35 @@ html {
 }
 
 .open  {
-    .portfolio__icons {
+    .portfolio__icons__chevron {
         transform: rotate(-180deg);
     }
+    .portfolio__less {
+        display: block;
+    }
+    .portfolio__more {
+        display: none;
+    }
+}
+
+.scrollup {
+    position: fixed;
+    right: 4.5vw;
+    bottom: -20%;
+    padding: .5vw;
+    display: flex;
+    z-index: 3;
+    height: 24px;
+    background-color: var.$bg-color;
+    border-radius: 24px;
+    color: var.$main-color-6;
+    transform: rotate(180deg);
+    &:hover {
+        color: var.$main-color;
+        background-color: var.$secondary-color-2;
+        cursor: pointer;
+    }
+}
+.show-scroll {
+    bottom: 4vh;
 }

@@ -5,6 +5,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Krylon";
+  src: url(../font/Krylon-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .bar__90, .bar__80, .bar__60, .bar__50, .bar__30 {
   height: 12px;
   background-color: rgb(8, 42, 58);
@@ -33,6 +40,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 .show {
@@ -134,7 +142,7 @@ html {
 .header__btn {
   position: fixed;
   right: 4.5vw;
-  top: 90vh;
+  bottom: 90vh;
   background-color: rgb(242, 229, 215);
   height: 24px;
   width: auto;
@@ -176,13 +184,13 @@ html {
   color: rgb(8, 51, 70);
 }
 .nav__btn {
-  align-self: flex-end;
+  align-self: flex-start;
   background-color: rgb(242, 229, 215);
   height: 24px;
   width: auto;
   padding: 10px;
   border-radius: 24px;
-  margin-bottom: 4.5vh;
+  margin-top: 4.5vh;
   color: rgba(8, 42, 58, 0.8);
 }
 .nav__btn:hover {
@@ -224,15 +232,23 @@ html {
   top: 0;
   height: 100vh;
   width: 40vw;
-  z-index: 3;
+  z-index: 4;
   border-left: 15px solid rgba(8, 51, 70, 0.8);
   background-color: rgb(242, 229, 215);
-  justify-content: space-between;
-  align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 10vh 5vw 0 5vw;
+  gap: 3vh;
+  padding: 1vw 5vw 8vh 5vw;
   transition: 0.4;
+}
+.main .about__more .close-btn {
+  align-self: flex-end;
+}
+.main .about__more__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .main .about__content {
   display: flex;
@@ -323,6 +339,21 @@ html {
   flex-direction: column;
   gap: 2vh;
 }
+.main .portfolio__link {
+  position: relative;
+}
+.main .portfolio__link:hover .portfolio__demo {
+  display: block;
+}
+.main .portfolio__demo {
+  position: absolute;
+  top: 1vh;
+  left: 1vh;
+  padding: 0.5vw;
+  background-color: rgb(242, 229, 215);
+  z-index: 3;
+  display: none;
+}
 .main .portfolio__img {
   height: 25vh;
   width: 100%;
@@ -340,6 +371,16 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 0 1vw;
+}
+.main .portfolio__less {
+  display: none;
+}
+.main .portfolio__icons {
+  display: flex;
+  align-items: center;
+}
+.main .portfolio__icons .text {
+  font-size: 12px;
 }
 .main .portfolio__icons__chevron {
   padding: 10px;
@@ -403,6 +444,35 @@ html {
   padding-left: 3vw;
 }
 
-.open .portfolio__icons {
+.open .portfolio__icons__chevron {
   transform: rotate(-180deg);
+}
+.open .portfolio__less {
+  display: block;
+}
+.open .portfolio__more {
+  display: none;
+}
+
+.scrollup {
+  position: fixed;
+  right: 4.5vw;
+  bottom: -20%;
+  padding: 0.5vw;
+  display: flex;
+  z-index: 3;
+  height: 24px;
+  background-color: rgb(242, 229, 215);
+  border-radius: 24px;
+  color: rgba(8, 42, 58, 0.6);
+  transform: rotate(180deg);
+}
+.scrollup:hover {
+  color: rgb(8, 42, 58);
+  background-color: rgba(8, 51, 70, 0.2);
+  cursor: pointer;
+}
+
+.show-scroll {
+  bottom: 4vh;
 }/*# sourceMappingURL=styles.css.map */
